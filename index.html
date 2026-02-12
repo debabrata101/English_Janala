@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>English Janala | Best Platfrom for learning English</title>
+  <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+  <!--font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--font integration-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <!--tailwind and daisy ui-->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <!--stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+  <header>
+    <div class="navbar bg-base-100 shadow-sm">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="-1" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+            <a href="" class=""><i class="fa-solid fa-circle-question"></i>FAQ</a>
+            <a href="" class=""><i class="fa-solid fa-book-open"></i>Learn</a>
+            <a href="" class=""><i class="fa-solid fa-arrow-right-from-bracket"></i></i>Logout</a>
+          </ul>
+        </div>
+        <a href="" class="flex item-center gap-1">
+          <span class="text-lg font-bold">English</span>
+          <img src="./assets/logo.png" alt="" />
+          <span class="font-bangla text-lg font-semibold">জানালা</span>
+        </a>
+      </div>
+      <div class="navbar-end hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 space-x-4">
+          <a href="" class="btn btn-outline btn-primary"><i class="fa-solid fa-circle-question"></i>FAQ</a>
+          <a href="" class="btn btn-outline btn-primary"><i class="fa-solid fa-book-open"></i>Learn</a>
+          <a href="" class="btn btn-outline btn-primary"><i
+              class="fa-solid fa-arrow-right-from-bracket"></i></i>Logout</a>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <section class="flex flex-col-reverse md:flex-row gap-10 justify-between items-center py-5 w-11/12 mx-auto">
+    <div class="content flex-1 text-center md:text-left">
+      <h2 class="text-4xl font-bold mb-8"><span class="text-sky-400">English </span>is Easy!!</h2>
+      <p class="font-bangla">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা
+        আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে
+        অন্য একটি Level এ</p>
+      <div class="form mt-8 w-full md:w-3/4 lg:w-1/2 mx-auto md:mx-0">
+
+        <input type="text" placeholder="Enter Your Name"
+          class="w-full border border-gray-300 rounded-lg p-3 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+        <input type="password" placeholder="Password"
+          class="w-full border border-gray-300 rounded-lg p-3 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+        <button class="bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-indigo-700">
+          Get Started
+        </button>
+
+      </div>
+    </div>
+    <div class="image flex-1">
+      <img src="./assets/hero-student.png" alt="" />
+    </div>
+  </section>
+  <section class="">
+    <h2 class="text-4xl font-bold mb-8 text-center "><span class="text-sky-400">Let's</span>Learn Vocabulary</h2>
+    <div id="level-container" class="flex gap-5 flex-wrap justify-center space-y-5">
+
+    </div>
+  </section>
+
+  <section class="flex justify-center">
+    <div class="join">
+      <div>
+        <label class="input validator join-item">
+          <input id="input-search" type="text" placeholder="Search Vocabulary " required />
+        </label>
+      </div>
+      <button id="btn-search" class="btn btn-primary join-item">Search</button>
+    </div>
+  </section>
+
+  <section id="spinner" class="flex justify-center items-center py-10 hidden">
+    <span class="loading loading-bars loading-xl"></span>
+  </section>
+
+  <section id="word-container" class="bg-gray-100 p-10 w-11/12 mx-auto my-10 grid grid-cols-3 gap-5">
+    <div class=" text-center col-span-full rounded-xl py-10 space-y-6">
+      <p class="font-bangla text-xl font-medium text-gray-400">আপনি এখনো কোন Lesson Select করেন নি</p>
+      <h2 class="font-bangla font-bold text-4xl">একটি Lesson Select করুন।</h2>
+    </div>
+
+  </section>
+
+  <!-- Open the modal using ID.showModal() method -->
+  <!--<button class="btn" onclick="my_modal_5.showModal()">open modal</button>-->
+  <dialog id="word_modal" class="modal modal-bottom sm:modal-middle">
+    <div class="modal-box ">
+      <div id="details-container" class=" space-y-5 ">
+      </div>
+      <div class="modal-action">
+        <form method="dialog">
+          <!-- if there is a button in form, it will close the modal -->
+          <button class="btn">Close</button>
+        </form>
+      </div>
+    </div>
+  </dialog>
+  <section class="">
+    <h2 class="text-4xl font-bold mb-8 text-center "><span class="text-sky-400">Frequently</span>Asked Questions</h2>
+  </section>
+
+  <section class=" px-20 mx-auto">
+
+    <div class="collapse collapse-plus bg-base-100 border border-base-300">
+      <input type="radio" name="my-accordion-3" checked="checked" />
+      <div class="collapse-title font-semibold">How do I create an account?</div>
+      <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow the
+        registration process.</div>
+    </div>
+    <div class="collapse collapse-plus bg-base-100 border border-base-300">
+      <input type="radio" name="my-accordion-3" />
+      <div class="collapse-title font-semibold">I forgot my password. What should I do?</div>
+      <div class="collapse-content text-sm">Click on "Forgot Password" on the login page and follow the instructions
+        sent to your email.</div>
+    </div>
+    <div class="collapse collapse-plus bg-base-100 border border-base-300">
+      <input type="radio" name="my-accordion-3" />
+      <div class="collapse-title font-semibold">How do I update my profile information?</div>
+      <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+    </div>
+    <div class="collapse collapse-plus bg-base-100 border border-base-300">
+      <input type="radio" name="my-accordion-3" />
+      <div class="collapse-title font-semibold">4. How can I build my English vocabulary?</div>
+      <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+    </div>
+    <div class="collapse collapse-plus bg-base-100 border border-base-300">
+      <input type="radio" name="my-accordion-3" />
+      <div class="collapse-title font-semibold">5. Do you offer certificates for completed courses?</div>
+      <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+    </div>
+  </section>
+
+  <section class="px-auto pt-10">
+    <footer class="footer sm:footer-horizontal bg-[#1A91FF10] justify-between p-10 m-auto">
+      <aside>
+        <div class="flex items-center text-xl">
+          <span class="font-bold">English</span>
+          <img src="./assets/logo.png" >
+          <span class="font-bangla ">জানালা</span>
+        </div>
+        <p class="text-gray-400">
+          <span class="font-bangla ">ইংরেজি শিখুন সহজে</span>
+          <br />
+          Providing ED-Tech Applications since 2025
+        </p>
+      </aside>
+      <nav>
+        <h6 class="footer-title">FOLLOW US</h6>
+        <div class="grid grid-flow-col gap-4 ">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-youtube"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></i></a>
+          <a href=""><i class="fa-brands fa-github"></i>></a>
+
+        </div>
+      </nav>
+    </footer>
+  </section>
+
+</body>
+<script src="./script/index.js"></script>
+
+</html>
